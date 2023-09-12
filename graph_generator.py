@@ -120,7 +120,7 @@ class GraphGenerator(object):
         g.body.extend(
             ['rankdir="LR"', 'size="9"', 'fixedsize="false"', 'splines="true"', 'nodesep=0.3', 'ranksep=0', 'fontsize=10', 'overlap="scalexy"',
              'engine= "neato"'])
-
+        print(type(lst))
         for index, item in enumerate(lst):
             if len(item) < 3:
                 lst.pop(index)

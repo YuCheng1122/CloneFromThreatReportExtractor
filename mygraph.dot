@@ -1,0 +1,2 @@
+digraph "mygraph.dot" {
+rankdir="LR"size="9"fixedsize="false"splines="true"nodesep=0.3ranksep=0fontsize=10overlap="scalexy"engine= "neato"}

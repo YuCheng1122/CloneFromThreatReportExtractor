@@ -29,12 +29,14 @@ from project_config import SEC_PATTERNS_FILE_PATH
 class RoleGenerator(object):
     def __init__(self, nlp, main_verbs) -> None:
         super(RoleGenerator, self).__init__()
-
-        self.nlp = nlp  # self.svo_extractor.nlp
-
-        self.svo_extractor = SubjectVerbObjectExtractor(nlp)
-
+        self.nlp = nlp
         self.main_verbs = main_verbs
+
+    def generate_roles(self, text):
+        # Your role generation logic here
+        roles = []
+        # Assuming you populate 'roles' list with your logic
+        return roles
 
     def colon_seprator_multiplication(self, stri):
         print("[colon_seprator_multiplication] stri: ", stri)

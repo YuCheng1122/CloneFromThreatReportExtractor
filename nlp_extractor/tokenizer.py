@@ -38,12 +38,14 @@ from project_config import SEC_PATTERNS_FILE_PATH
 class ThreatTokenizer(object):
     def __init__(self, nlp, main_verbs, titles_list) -> None:
         super(ThreatTokenizer, self).__init__()
-
         self.nlp = nlp
-
         self.main_verbs = main_verbs
-
         self.titles_list = titles_list
+
+    def tokenize(self, text):
+        # Your tokenization logic here
+        return text
+
 
     ########################################################################################
 

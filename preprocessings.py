@@ -37,10 +37,12 @@ from project_config import RE_PATTERNS_FILE_PATH, SEC_PATTERNS_FILE_PATH
 class PreProcessor(object):
     def __init__(self, nlp) -> None:
         super(PreProcessor, self).__init__()
+        self.nlp = nlp
 
-        self.nlp = nlp  # nlp = spacy.load("en_core_web_lg")
+    def preprocess(self, text):
+        # Your preprocessing logic here
+        return text
 
-        self.Pass2Act = PASS2ACT(nlp)
 
     def delete_brackets(self, stri):
         stri = stri.replace("[", "")
