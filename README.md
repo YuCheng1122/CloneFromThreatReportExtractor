@@ -23,6 +23,12 @@
     pip install -r requirements.txt
     ```
 
+    或者，如果您使用Pipenv，您可以運行以下命令：
+    ```bash
+    pipenv install --python 3.8
+    pipenv install -r requirements.txt
+    ```
+
 5. **安裝Spacy模型**:
     ```bash
     python -m spacy download en_core_web_lg
